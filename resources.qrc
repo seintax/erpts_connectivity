@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/plugins/zds_erpts_integration" >
+        <file>img/zds_erpts_integration_config_icon.png</file>
+        <file>img/zds_erpts_integration_dialog_icon.png</file>
+    </qresource>
+</RCC>
