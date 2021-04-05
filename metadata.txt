@@ -5,12 +5,12 @@
 [general]
 name=eRPTS Integration
 qgisMinimumVersion=3.0
-description=eRPTS Integration
-version=0.1
+description=This plugin contains the integrated tools relevant to the map digitization under the eRPTS.
+version=0.2
 author=@seintaxerror
 email=seintaxerror@gmail.com
 
-about=Zamboanga del Sur eRPTS Integration
+about=This plugin was developed solely to aid in the map digitization of the Province of Zamboanga del Sur, Philippines
 
 tracker=https://github.com/seintax/erpts_connectivity/issues
 repository=https://github.com/seintax/erpts_connectivity
@@ -37,7 +37,7 @@ deprecated=False
 # Since QGIS 3.8, a comma separated list of plugins to be installed
 # (or upgraded) can be specified.
 # Check the documentation for more information.
-# plugin_dependencies=
+# plugin_dependencies=mysqlclient
 
 Category of the plugin: Raster, Vector, Database or Web
 # category=

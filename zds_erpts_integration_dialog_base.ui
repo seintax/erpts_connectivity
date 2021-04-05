@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1247</width>
-    <height>705</height>
+    <width>1283</width>
+    <height>712</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -29,7 +29,7 @@
   <widget class="QComboBox" name="cb_field_brgys">
    <property name="geometry">
     <rect>
-     <x>1060</x>
+     <x>1100</x>
      <y>30</y>
      <width>171</width>
      <height>31</height>
@@ -40,9 +40,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>30</y>
-     <width>320</width>
-     <height>661</height>
+     <y>70</y>
+     <width>301</width>
+     <height>321</height>
     </rect>
    </property>
    <property name="editTriggers">
@@ -54,28 +54,33 @@
    <property name="selectionBehavior">
     <enum>QAbstractItemView::SelectRows</enum>
    </property>
-  </widget>
-  <widget class="QTableWidget" name="tw_error">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>30</y>
-     <width>711</width>
-     <height>241</height>
-    </rect>
+   <property name="columnCount">
+    <number>3</number>
    </property>
-   <property name="editTriggers">
-    <set>QAbstractItemView::NoEditTriggers</set>
-   </property>
-   <property name="selectionMode">
-    <enum>QAbstractItemView::SingleSelection</enum>
-   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>130</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>LOT_NO</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ARPNO</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>STATUS</string>
+    </property>
+   </column>
   </widget>
   <widget class="QPushButton" name="btn_locate">
    <property name="geometry">
     <rect>
-     <x>1060</x>
-     <y>70</y>
+     <x>320</x>
+     <y>230</y>
      <width>171</width>
      <height>31</height>
     </rect>
@@ -87,8 +92,8 @@
   <widget class="QPushButton" name="btn_analyze">
    <property name="geometry">
     <rect>
-     <x>1060</x>
-     <y>110</y>
+     <x>500</x>
+     <y>230</y>
      <width>171</width>
      <height>31</height>
     </rect>
@@ -100,37 +105,24 @@
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>280</y>
-     <width>711</width>
-     <height>411</height>
+     <x>319</x>
+     <y>269</y>
+     <width>951</width>
+     <height>401</height>
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>2</number>
    </property>
    <widget class="QWidget" name="tab_2">
     <attribute name="title">
      <string>LAND INFORMATION</string>
     </attribute>
-    <widget class="QPushButton" name="btn_reload">
-     <property name="geometry">
-      <rect>
-       <x>550</x>
-       <y>10</y>
-       <width>141</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Reload Configuration</string>
-     </property>
-    </widget>
     <widget class="QComboBox" name="cb_field_names">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>11</y>
+       <x>430</x>
+       <y>10</y>
        <width>131</width>
        <height>31</height>
       </rect>
@@ -141,12 +133,12 @@
       <rect>
        <x>20</x>
        <y>50</y>
-       <width>671</width>
+       <width>911</width>
        <height>141</height>
       </rect>
      </property>
      <property name="editTriggers">
-      <set>QAbstractItemView::NoEditTriggers</set>
+      <set>QAbstractItemView::DoubleClicked</set>
      </property>
      <property name="selectionMode">
       <enum>QAbstractItemView::SingleSelection</enum>
@@ -158,8 +150,8 @@
     <widget class="QPushButton" name="btn_get_data">
      <property name="geometry">
       <rect>
-       <x>410</x>
-       <y>10</y>
+       <x>800</x>
+       <y>9</y>
        <width>131</width>
        <height>31</height>
       </rect>
@@ -171,7 +163,7 @@
     <widget class="QComboBox" name="cb_field_values">
      <property name="geometry">
       <rect>
-       <x>270</x>
+       <x>290</x>
        <y>10</y>
        <width>131</width>
        <height>31</height>
@@ -183,8 +175,8 @@
       <rect>
        <x>20</x>
        <y>200</y>
-       <width>671</width>
-       <height>171</height>
+       <width>911</width>
+       <height>161</height>
       </rect>
      </property>
      <property name="currentIndex">
@@ -192,53 +184,40 @@
      </property>
      <widget class="QWidget" name="tab_5">
       <attribute name="title">
-       <string>NEW VALUE</string>
+       <string>LOT NO</string>
       </attribute>
       <widget class="QTableWidget" name="tw_value">
        <property name="geometry">
         <rect>
          <x>10</x>
          <y>10</y>
-         <width>641</width>
-         <height>81</height>
+         <width>881</width>
+         <height>80</height>
         </rect>
        </property>
        <property name="editTriggers">
         <set>QAbstractItemView::NoEditTriggers</set>
        </property>
       </widget>
-      <widget class="QPushButton" name="btn_apply">
+      <widget class="QPushButton" name="btn_lot">
        <property name="geometry">
         <rect>
-         <x>400</x>
+         <x>680</x>
          <y>100</y>
-         <width>121</width>
+         <width>101</width>
          <height>31</height>
         </rect>
        </property>
        <property name="text">
-        <string>Apply Value</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="lbl_lot">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>110</y>
-         <width>331</width>
-         <height>16</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
+        <string>Apply LOT No.</string>
        </property>
       </widget>
       <widget class="QPushButton" name="btn_use">
        <property name="geometry">
         <rect>
-         <x>530</x>
+         <x>790</x>
          <y>100</y>
-         <width>121</width>
+         <width>101</width>
          <height>31</height>
         </rect>
        </property>
@@ -246,10 +225,23 @@
         <string>Use Value</string>
        </property>
       </widget>
+      <widget class="QPushButton" name="btn_arp">
+       <property name="geometry">
+        <rect>
+         <x>570</x>
+         <y>100</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Apply ARP No.</string>
+       </property>
+      </widget>
       <zorder>btn_use</zorder>
       <zorder>tw_value</zorder>
-      <zorder>btn_apply</zorder>
-      <zorder>lbl_lot</zorder>
+      <zorder>btn_lot</zorder>
+      <zorder>btn_arp</zorder>
      </widget>
      <widget class="QWidget" name="tab_4">
       <attribute name="title">
@@ -259,17 +251,17 @@
        <property name="geometry">
         <rect>
          <x>110</x>
-         <y>10</y>
-         <width>541</width>
-         <height>111</height>
+         <y>20</y>
+         <width>781</width>
+         <height>101</height>
         </rect>
        </property>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>40</y>
+         <y>30</y>
          <width>66</width>
          <height>72</height>
         </rect>
@@ -882,8 +874,18 @@
       </widget>
      </widget>
     </widget>
+    <widget class="QLineEdit" name="txt_field_value">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>10</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>txt_field_value</zorder>
     <zorder>tabWidget_2</zorder>
-    <zorder>btn_reload</zorder>
     <zorder>cb_field_names</zorder>
     <zorder>tw_data</zorder>
     <zorder>btn_get_data</zorder>
@@ -898,8 +900,8 @@
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>681</width>
-       <height>321</height>
+       <width>921</width>
+       <height>301</height>
       </rect>
      </property>
      <property name="editTriggers">
@@ -915,8 +917,8 @@
     <widget class="QPushButton" name="btn_irre">
      <property name="geometry">
       <rect>
-       <x>520</x>
-       <y>340</y>
+       <x>760</x>
+       <y>330</y>
        <width>171</width>
        <height>31</height>
       </rect>
@@ -928,8 +930,8 @@
     <widget class="QPushButton" name="btn_join">
      <property name="geometry">
       <rect>
-       <x>350</x>
-       <y>340</y>
+       <x>590</x>
+       <y>330</y>
        <width>161</width>
        <height>31</height>
       </rect>
@@ -941,8 +943,8 @@
     <widget class="QPushButton" name="btn_commit">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>340</y>
+       <x>450</x>
+       <y>330</y>
        <width>131</width>
        <height>31</height>
       </rect>
@@ -951,30 +953,75 @@
       <string>Reload Attributes</string>
      </property>
     </widget>
+    <widget class="QLabel" name="lbl_database_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>350</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NSP: No subdivision plan</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_database_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NSD: No subdivision data</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_backup">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>330</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Backup Lot No.</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QWidget" name="tab_3">
     <attribute name="title">
-     <string>TMCR</string>
+     <string> TMCR REFERENCE</string>
     </attribute>
     <widget class="QTableWidget" name="tw_tmcr">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>50</y>
-       <width>681</width>
-       <height>281</height>
+       <width>921</width>
+       <height>250</height>
       </rect>
      </property>
      <property name="editTriggers">
       <set>QAbstractItemView::DoubleClicked</set>
      </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>120</number>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>39</number>
+     </attribute>
     </widget>
     <widget class="QPushButton" name="btn_tmcr">
      <property name="geometry">
       <rect>
-       <x>520</x>
-       <y>340</y>
-       <width>171</width>
+       <x>840</x>
+       <y>330</y>
+       <width>91</width>
        <height>31</height>
       </rect>
      </property>
@@ -985,9 +1032,9 @@
     <widget class="QComboBox" name="cb_search">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>200</x>
        <y>10</y>
-       <width>211</width>
+       <width>181</width>
        <height>31</height>
       </rect>
      </property>
@@ -995,24 +1042,273 @@
     <widget class="QLineEdit" name="txt_search">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>390</x>
        <y>10</y>
-       <width>341</width>
+       <width>541</width>
        <height>31</height>
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="btn_tmcr_search">
+    <widget class="QComboBox" name="cb_tmcr_brgys">
      <property name="geometry">
       <rect>
-       <x>580</x>
+       <x>10</x>
        <y>10</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_tmcr_match">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>330</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Match TMCR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_ref_shp">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>80</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>SHP Notes</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_ref_own">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>330</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>OWNER (For Public Lands)</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_brgy_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>310</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reference Options:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_ref_lot">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>330</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>LOT NO. Only</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_tmcr_ref">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>310</y>
+       <width>331</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TMCR Reference at: []</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_ref_cft">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>330</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>LOG Conflict</string>
+     </property>
+    </widget>
+    <zorder>cb_tmcr_brgys</zorder>
+    <zorder>tw_tmcr</zorder>
+    <zorder>btn_tmcr</zorder>
+    <zorder>cb_search</zorder>
+    <zorder>txt_search</zorder>
+    <zorder>btn_tmcr_match</zorder>
+    <zorder>btn_ref_shp</zorder>
+    <zorder>btn_ref_own</zorder>
+    <zorder>lbl_brgy_2</zorder>
+    <zorder>btn_ref_lot</zorder>
+    <zorder>lbl_tmcr_ref</zorder>
+    <zorder>btn_ref_cft</zorder>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>PROCESS OPTIONS</string>
+    </attribute>
+    <widget class="QCheckBox" name="ch_auto_match">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>461</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dynamiically re-analyze map data after referencing</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="ch_auto_locate">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>461</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dynamically locate lot feature on map by clicking from Matched/Unmatched tables</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_client_config">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Apply Configuration</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_7">
+    <attribute name="title">
+     <string>FILE MANAGER</string>
+    </attribute>
+    <widget class="QgsFileWidget" name="mQgsFileWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>711</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="dialogTitle">
+      <string>Browse your working files directory</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>711</width>
+       <height>251</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_feature_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
        <width>111</width>
        <height>31</height>
       </rect>
      </property>
      <property name="text">
-      <string>Search</string>
+      <string>Set Base SHP File</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_status_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>300</y>
+       <width>911</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Base File:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_feature_3">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>330</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Create Section From Base Map</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_feature_4">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>330</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Delete SHP File</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>735</x>
+       <y>10</y>
+       <width>201</width>
+       <height>281</height>
+      </rect>
      </property>
     </widget>
    </widget>
@@ -1020,7 +1316,7 @@
   <widget class="QLabel" name="lbl_brgy">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>320</x>
      <y>10</y>
      <width>331</width>
      <height>16</height>
@@ -1030,19 +1326,207 @@
     <string/>
    </property>
   </widget>
+  <widget class="QPushButton" name="btn_reload">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>70</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Reload Configuration</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_search_lot">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Search Lot No.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_lot">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>10</y>
+     <width>281</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_feature">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>230</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Load Selected Lot</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tw_feature">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>400</y>
+     <width>301</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>301</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>301</width>
+     <height>271</height>
+    </size>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="columnCount">
+    <number>2</number>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>132</number>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>FIELD</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>VALUES</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="lbl_status">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>680</y>
+     <width>951</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="pb_status">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>680</y>
+     <width>221</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_skip">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>230</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Skip Current Lot</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tw_error">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>30</y>
+     <width>771</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_minimize">
+   <property name="geometry">
+    <rect>
+     <x>1100</x>
+     <y>110</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Minimize Plugin</string>
+   </property>
+  </widget>
   <zorder>tabWidget</zorder>
   <zorder>lbl_database</zorder>
   <zorder>cb_field_brgys</zorder>
-  <zorder>lbl_legend1</zorder>
-  <zorder>lbl_legend2</zorder>
-  <zorder>lbl_legend3</zorder>
-  <zorder>lbl_legend4</zorder>
   <zorder>tw_match</zorder>
-  <zorder>tw_error</zorder>
   <zorder>btn_locate</zorder>
   <zorder>btn_analyze</zorder>
   <zorder>lbl_brgy</zorder>
+  <zorder>btn_reload</zorder>
+  <zorder>txt_search_lot</zorder>
+  <zorder>lbl_lot</zorder>
+  <zorder>btn_feature</zorder>
+  <zorder>tw_feature</zorder>
+  <zorder>lbl_status</zorder>
+  <zorder>pb_status</zorder>
+  <zorder>btn_skip</zorder>
+  <zorder>tw_error</zorder>
+  <zorder>btn_minimize</zorder>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsFileWidget</class>
+   <extends>QWidget</extends>
+   <header>qgsfilewidget.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
